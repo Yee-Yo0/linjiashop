@@ -27,8 +27,8 @@ public abstract class BaseEntity implements Serializable {
     @Id
     @GeneratedValue
     private Long id;
-    @CreatedDate
-    @Column(name = "create_time",columnDefinition="DATETIME COMMENT '创建时间/注册时间'")
+            @CreatedDate
+            @Column(name = "create_time",columnDefinition="DATETIME COMMENT '创建时间/注册时间'")
     private Date createTime;
     @Column(name = "create_by",columnDefinition="bigint COMMENT '创建人'")
     @CreatedBy
